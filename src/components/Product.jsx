@@ -1,11 +1,14 @@
 import React from 'react'
+import appWatchImage from './images/apple-watch.png';
+
 
 const Product = () => {
+
   return (
     <div>
         <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
-                <img class="p-8 rounded-t-lg" src="/images/apple-watch.png" alt="product image" />
+                <img className="p-8 rounded-t-lg" src={appWatchImage} alt='apple watch' />
             </a>
             <div className="px-5 pb-5">
                 <a href="#">
@@ -29,4 +32,4 @@ const Product = () => {
   )
 }
 
-export default Product
+export default Product;
