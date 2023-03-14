@@ -1,11 +1,19 @@
-import Product from "./components/Product";
+import { useState } from "react";
+import ProductList from "./components/ProductList";
 
 function App() {
+
+const [products, setProducts] = useState([
+    {id: 1, title: 'fucking apple wtach', price: "$600"},
+    {id: 2, title: 'asshole apple wtach', price: "$390"},
+    {id: 3, title: 'pusssy apple wtach', price: "$520"},
+    {id: 4, title: 'dick apple wtach', price: "$740"}
+  ]);
+
+
   return (
     <div >
-      <Product title="Apple watch RED cor i3 series A"/>
-      <Product title="Apple Watch Classic Model E720"/>
-      <Product title="Applw Watch Miror Solver+ cor i 7 series M2"/>
+      <ProductList products={products} />
     </div>
   );
 }
